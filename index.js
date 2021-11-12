@@ -108,14 +108,13 @@ const zooAnimals = [
   */
 
 function animalNames(array) {
+  const displayName = [];
+ array.forEach(function(item){
+let forAnimal = `name: ${item.animal_name}, scientific: ${item.scientific_name}`
+ displayName.push(forAnimal)
 
-  const displayNames = array.forEach(function(item){
-   console.log(item.scientific_name , item.animal_name)
-   
-    
-  })
-  const display = display.push(displayNames);
-  return display
+ })
+ return displayName
 }
 console.log(animalNames(zooAnimals))
 
